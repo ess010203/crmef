@@ -22,6 +22,7 @@ class CoursList(generics.ListCreateAPIView):
     filter_backends = [filters.SearchFilter]
     search_fields = ['title', 'description','hours']
 
+
 class Cours_pk(generics.RetrieveUpdateDestroyAPIView):
     queryset = Cours.objects.all()
     serializer_class = CoursSerializer

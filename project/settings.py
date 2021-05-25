@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'cours',
     'rest_framework',
     'corsheaders',
+    'colorfield'
 ]
 
 MIDDLEWARE = [
@@ -95,6 +96,17 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'crmef',
+#         'USER': 'root', 
+#         'PASSWORD': '',
+#         'HOST': 'localhost',
+#         'PORT': '3306',   #my port is 3306
+#     }
+# }
 
 
 # Password validation
