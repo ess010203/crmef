@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-g1t=n%@fc5+se!8u672j-^xjb=9q1aovsc-e8rbh9$&qan_r8u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-
+AUTH_USER_MODEL = 'accounts.User'
 
 
 ALLOWED_HOSTS=['*']
@@ -52,7 +52,10 @@ INSTALLED_APPS = [
     'cours',
     'rest_framework',
     'corsheaders',
-    'colorfield'
+    'nested_admin',
+    'accounts',
+    'knox',
+    'quiz',
 ]
 
 MIDDLEWARE = [
@@ -96,18 +99,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'crmef',
-#         'USER': 'root', 
-#         'PASSWORD': '',
-#         'HOST': 'localhost',
-#         'PORT': '3306',   #my port is 3306
-#     }
-# }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
