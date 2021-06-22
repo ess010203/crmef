@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-g1t=n%@fc5+se!8u672j-^xjb=9q1aovsc-e8rbh9$&qan_r8u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-AUTH_USER_MODEL = 'accounts.User'
+#AUTH_USER_MODEL = 'accounts.User'
 
 
 ALLOWED_HOSTS=['*']
@@ -53,9 +53,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'nested_admin',
-    'accounts',
-    'knox',
     'quiz',
+    'news'
 ]
 
 MIDDLEWARE = [

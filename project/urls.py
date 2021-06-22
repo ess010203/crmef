@@ -22,6 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("",include('cours.urls',namespace='cours')),
     path('api/', include('quiz.urls')),
+    path('nested_admin', include('nested_admin.urls')),
     path('api-auth/', include('rest_framework.urls')),
 ]
 
